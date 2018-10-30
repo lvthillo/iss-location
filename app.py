@@ -1,5 +1,4 @@
 from requests.exceptions import HTTPError
-
 import requests
 import folium
 import webbrowser
@@ -23,7 +22,9 @@ def convert_coordinates_to_place(lat, lng):
         r = requests.get(url)
         r.raise_for_status()
     except HTTPError:
-        print('Could not get data from %s\nMaybe check your API_KEY' % r.url)
+        print('Could not get data from %s\nMaybe check your API_KEY?' % r.url)
+        raise SystemExit
+
     j = r.json()
     try:
         address = j['results'][0]['formatted_address']
