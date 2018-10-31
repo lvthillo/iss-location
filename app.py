@@ -28,9 +28,9 @@ def convert_coordinates_to_place(lat, lng):
     j = r.json()
     try:
         address = j['results'][0]['formatted_address']
-        return "<b>Location</b>: %s<br><b>Latency</b>: %s<br><b>Longitude</b>: %s" % (address, lat, lng)
+        return "<b>Location</b>: %s<br><b>Latitude</b>: %s<br><b>Longitude</b>: %s" % (address, lat, lng)
     except IndexError:
-        return "<b>Location</b>: Unknown<br><b>Latency</b>: %s<br><b>Longitude</b>: %s" % (lat, lng)
+        return "<b>Location</b>: Unknown<br><b>Latitude</b>: %s<br><b>Longitude</b>: %s" % (lat, lng)
 
 
 def draw_map(lat, lng):
