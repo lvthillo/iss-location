@@ -15,5 +15,6 @@ $ python3.6 app.py
 ```
 
 The browser will open and show above which villages or cities the ISS is circulating.
+<img width="1439" alt="screen shot 2018-11-01 at 10 49 31" src="https://user-images.githubusercontent.com/14105387/47844932-e7ac7380-ddc3-11e8-8084-01ecf93f0dfb.png">
 
-<img width="1437" alt="screen shot 2018-10-30 at 21 17 23" src="https://user-images.githubusercontent.com/14105387/47747896-b92a7d80-dc89-11e8-8db7-4ca93b5af34c.png">
+
